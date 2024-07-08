@@ -9,6 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route exact path="/" component={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/protected" element={<ProtectedRoute />} />
